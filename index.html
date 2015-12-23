@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<img id="plot" src="/plot.png" />
+<script type="text/javascript">
+  var graph = document.getElementById('plot');
+  setInterval(function() {
+    graph.src = '/plot.png?time=' + Date.now();
+  }, 1001)
+</script>
+</body>
+</html>
